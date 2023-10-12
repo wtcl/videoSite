@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频展示</title>
+</head>
+<body>
+<p style="text-align: center">刷新看不同视频哦！</p>
+{% for num in movies %}
+<!--    <video width="1500" height="900" controls="controls">-->
+<center>
+<!--        <video controls="controls">-->
+            <video width="900" height="900" controls="controls">
+      <source src="static/video/{{num}}" type="video/mp4" />
+    </video><center>
+{% endfor %}
+</body>
+</html>
+
+
